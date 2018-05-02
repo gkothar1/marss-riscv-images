@@ -1,6 +1,6 @@
 # RISCV Disk Images
 
-This repository contains a serious of disk images, kernels and
+This repository contains a series of disk images, kernels and
 riscvemu configurations for development purposes.
 
 # How to use?
@@ -8,7 +8,7 @@ riscvemu configurations for development purposes.
 Each directory represents a specific configuration and contains a
 userland disk image, bootloader, kernel and riscvemu config file. The
 disk images are compressed with xz for storage efficiency. The file
-`PACKAGES` file lists the package present in the image.
+`PACKAGES` lists the packages present in the image.
 
 Follow the instructions below after cloning the repository to get
 started:
@@ -54,7 +54,7 @@ grow the file system follow the steps below:
   # losetup -d /dev/loop0
   ```
 
-Riscvemu does not propagate the changes to the disk image by default
+Riscvemu does not propagate file changes to the disk image by default
 and discards them upon shutdown. For persistency, pass `-rw` to
 riscvemu on the command line.
 

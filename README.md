@@ -3,6 +3,24 @@
 This repository contains a series of disk images, kernels and
 riscvemu configurations for development purposes.
 
+# Prerequisites
+
+- To be able to clone the repository correctly, git-lfs must be
+  installed on the system. See
+  https://github.com/git-lfs/git-lfs/wiki/Installation for
+  distro-specific installation instructions.
+
+- Although the disk images are generic, the kernel + bootloader is
+  meant to be used with riscvemu. See https://bellard.org/riscvemu/
+  for more details.
+
+- The disk images need to be decompressed using xz which is part of
+  the xz utils package. See https://tukaani.org/xz/ for more details.
+
+- To be able to grow the free space on the disk image, e2fsprogs is
+  required. Most Linux distros have this installed by default. See
+  http://e2fsprogs.sourceforge.net/ for more details.
+
 # How to use?
 
 Each directory represents a specific configuration and contains a
